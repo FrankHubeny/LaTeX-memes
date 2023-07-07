@@ -1,0 +1,68 @@
+\usepackage[outline]{contour}
+\newcommand*{\outline}[3]{\color{#2}\contour{#3}{\Huge#1}}
+
+\usepackage{graphicx}
+\usepackage{pgf}
+\usepgflibrary{shadings}
+
+\usepackage{tikz}
+\usetikzlibrary{
+  backgrounds, 
+  calligraphy,
+  decorations.text, 
+  decorations.shapes, 
+  decorations.pathmorphing, 
+  decorations.text,
+  knots,
+  shapes.geometric}
+
+\tikzset{
+  circledecoration/.style 2 args={
+    decorate,decoration={
+	  shape backgrounds,
+	  shape=circle,
+	  shape sep=#1,
+	  shape size=#2
+	}
+  },
+  rectangledecoration/.style 2 args={
+    decorate,decoration={
+	  shape backgrounds,
+	  shape=rectangle,
+	  shape sep=#1,
+	  shape size=#2
+	}
+  },
+  borderdecoration/.style={
+    color=black,
+	fill=yellow,
+	decorate,decoration={
+	  shape backgrounds,
+	  shape=rectangle,
+	  shape sep=0.15cm,
+	  shape size=0.1cm
+	}
+  }
+}
+
+\usepackage{spath3}
+\usepackage{setspace}
+% https://opensiddur.org/help/fonts/
+% https://www.bibleplaces.com/paleo_hebrew_fonts/
+\usepackage{hyperref}
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguages{hebrew,greek} 
+\newfontfamily\hebrewfont{Ezra SIL}
+\newfontfamily\hebrewfontsf{Ezra SIL}
+\newfontfamily\greekfont{Gentium Plus}
+\newfontfamily\greekfontsf{Gentium Plus}
+\newfontfamily\englishfont{Andika}
+\newfontfamily\englishfontsf{Andika}
+
+\newcommand{\oneloop}{359}
+\newcommand{\twoloop}{719}
+\newcommand{\threeloop}{1079}
+\newcommand{\fourloop}{1439}
+\newcommand{\fiveloop}{1799}
+\definecolor{darkazure}{RGB}{0,56,184} % https://en.wikipedia.org/wiki/Flag_of_Israel
